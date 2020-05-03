@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Study\\OneDrive - University of Brighton\\Year 3\\CI328 - Internet game design and development\\Semester 2\\PIGMServerTesting\\PIGMServerTesting.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Study\\OneDrive - University of Brighton\\Year 3\\CI328 - Internet game design and development\\Semester 2\\CI328-Server\\PIGMServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Study\\OneDrive - University of Brighton\\Year 3\\CI328 - Internet game design and development\\Semester 2\\CI328-Server\\PIGMServer.csproj",
+        "projectName": "PIGMServer",
+        "projectPath": "C:\\Users\\Study\\OneDrive - University of Brighton\\Year 3\\CI328 - Internet game design and development\\Semester 2\\CI328-Server\\PIGMServer.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Study\\OneDrive - University of Brighton\\Year 3\\CI328 - Internet game design and development\\Semester 2\\PIGMServerTesting\\PIGMServerTesting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Study\\OneDrive - University of Brighton\\Year 3\\CI328 - Internet game design and development\\Semester 2\\PIGMServerTesting\\PIGMServerTesting.csproj",
+        "projectName": "PIGMServerTesting",
+        "projectPath": "C:\\Users\\Study\\OneDrive - University of Brighton\\Year 3\\CI328 - Internet game design and development\\Semester 2\\PIGMServerTesting\\PIGMServerTesting.csproj",
+        "packagesPath": "C:\\Users\\Study\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Study\\OneDrive - University of Brighton\\Year 3\\CI328 - Internet game design and development\\Semester 2\\PIGMServerTesting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Study\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Study\\OneDrive - University of Brighton\\Year 3\\CI328 - Internet game design and development\\Semester 2\\CI328-Server\\PIGMServer.csproj": {
+                "projectPath": "C:\\Users\\Study\\OneDrive - University of Brighton\\Year 3\\CI328 - Internet game design and development\\Semester 2\\CI328-Server\\PIGMServer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
