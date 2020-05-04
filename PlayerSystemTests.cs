@@ -44,10 +44,12 @@ namespace PIGMServerTesting
         [TestMethod]
         public void Player_DirectionIsCapped()
         {
+            // Create player and system.
             Player player = CreatePlayer("Test_2_Player_1");
             PlayerSystem system = CreateSystem();
             system.Add(player);
 
+            // Set direction and check it's successfully capped.
             player.Direction = 5;
             system.Update(0.5f);
             Assert.AreEqual(player.Direction, 2, 0.001, "Player direction upper bound not corrected to 2.");
@@ -56,10 +58,12 @@ namespace PIGMServerTesting
         [TestMethod]
         public void AddPlayer_SuccessfullyAdded()
         {
+            // Create player and system.
             Player playerOne = CreatePlayer("Test_3_Player_1");
             PlayerSystem system = CreateSystem();
             system.Add(playerOne);
 
+            // Ensure it was sucesffully added to the system.
             Assert.AreEqual(system.Get("Test_3_Player_1"), playerOne, "Single component not correctly inserted into the system.");
             Assert.AreEqual(system.Count(), 1, "Single component not correctly inserted into the system.");
         }
@@ -67,10 +71,12 @@ namespace PIGMServerTesting
         [TestMethod]
         public void AddMultiplePlayers_SuccessfullyAdded()
         {
+            // Create multiple players.
             Player playerOne = CreatePlayer("Test_4_Player_1");
             Player playerTwo = CreatePlayer("Test_4_Player_2");
             Player playerThree = CreatePlayer("Test_4_Player_3");
 
+            // Add players to the system.
             PlayerSystem system = CreateSystem();
             List<Player> players = new List<Player>()
             {
@@ -81,18 +87,21 @@ namespace PIGMServerTesting
 
             system.Add(players);
 
+            // Assert players added.
             Assert.AreEqual(system.Get("Test_4_Player_1"), playerOne, "Multiple components not correctly inserted into the system.");
             Assert.AreEqual(system.Get("Test_4_Player_2"), playerTwo, "Multiple components not correctly inserted into the system.");
             Assert.AreEqual(system.Get("Test_4_Player_3"), playerThree, "Multiple components not correctly inserted into the system.");
             Assert.AreEqual(system.Count(), 3, "Multiple components not correctly inserted into the system.");
         }
 
+        // Create player.
         private Player CreatePlayer(string name = "")
         {
             GameEntity entity = new GameEntity(name);
             return new Player(entity);
         }
 
+        // Create player system.
         private PlayerSystem CreateSystem()
         {
             SubWorld world = new BreakoutWorld(0);
